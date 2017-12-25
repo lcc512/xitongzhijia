@@ -21,10 +21,10 @@ a {
     color: #333;
 }
 
+
 a:hover {
     color: #358ff0;
 }
-
 .wrap {
     width: 1200px;
     margin-left: auto;
@@ -429,13 +429,12 @@ a:hover {
     font-weight: bold;
 }
 
-.os-catagary-title li{
-     height: 100%;
-     float: left;
-     width: 90px;
-     margin-right: 42px;
- }
-.os-catagary-title li a{
+
+.os-catagary-title a{
+    height: 100%;
+    float: left;
+    width: 90px;
+    margin-right: 42px;
     font-size: 18px;
     line-height: 55px;
 }
@@ -563,5 +562,26 @@ a:hover {
     display: none;
     background: #ccc url("../images/icon.png") no-repeat -486px -71px;
     background-size: 600px 1582px ;
+}
+.iarrow{
+    width: 16px;
+    height: 8px;
+    background: url("../images/icon.png") no-repeat -166px -19px;
+    position: absolute;
+    left: 50%;
+    bottom: -6px;
+    display: none;
+}
+.relativee{
+    position: relative;
+}
+.iarrow-cata{
+    width: 16px;
+    height: 8px;
+    background: url("../images/icon.png") no-repeat -166px -19px;
+    position: absolute;
+    left: 43%;
+    bottom: -8px;
+    display: none;
 }
 
