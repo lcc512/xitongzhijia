@@ -534,13 +534,13 @@ a:hover {
 .weixin{
     position: fixed;
     right: 0;
-    /*top: 450px;*/
-    top:200px;
+    top: 450px;
+    /*top:200px;*/
 }
 .weixin-weixin{
     width: 70px;
     height: 60px;
-    background-color: #358ff0;
+    background: #358ff0 url("../images/icon.png") no-repeat 16px -345px;
 }
 .weixin-weixin img{
     position: absolute;
@@ -560,7 +560,7 @@ a:hover {
     margin-top: 10px;
     width: 70px;
     height: 60px;
-    /*dis/play: none;*/
+    display: none;
     background: #ccc url("../images/icon.png") no-repeat -486px -71px;
     background-size: 600px 1582px ;
 }
