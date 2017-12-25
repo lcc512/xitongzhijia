@@ -1,0 +1,521 @@
+*,
+::before,
+::after{
+    margin: 0;
+    padding: 0;
+    font-family: "Microsoft YaHei", Arial;
+    font-size: 12px;
+    color: #666;
+    /*怪异盒模型*/
+    box-sizing: border-box;
+    /*兼容主流浏览器*/
+    -webkit-box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+a:hover {
+    color: #358ff0;
+}
+
+.wrap {
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.clearfix::before, .clearfix:after {
+    content: "";
+    display: block;
+    height: 0;
+    line-height: 0;
+    visibility: hidden;
+    clear: both;
+}
+
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+.font-18 {
+    font-size: 18px;
+}
+
+.font-14 {
+    font-size: 14px;
+}
+
+/*以上公用类*/
+/*顶栏细条加图搜索*/
+.title {
+    /*width: 100%;*/
+    background-color: #f5f5f5;
+    border-bottom: 1px solid #e8e8e8;
+}
+
+.top-title {
+    height: 30px;
+    padding-top: 6px;
+    position: relative;
+}
+
+.top-title > div:nth-child(2) > a {
+    margin: 0 5px;
+}
+
+/*顶栏浮动页面*/
+.inner-title {
+    width: 100%;
+    border-left: 1px solid #e8e8e8;
+    border-right: 1px solid #e8e8e8;
+    border-bottom: 1px solid #e8e8e8;
+    padding: 15px 5px 11px 34px;
+    background-color: #fff;
+    position: absolute;
+    top: 30px;
+    left: 0px;
+    display: none;
+    z-index: 999;
+}
+
+.inner-title.display-div {
+    display: block;
+}
+
+.inner-title li {
+    padding-left: 5px;
+    display: block;
+    width: 370px;
+}
+
+.inner-title li:nth-child(1) {
+    border-right: 1px dashed #e8e8e8;
+    border-bottom: 1px dashed #e8e8e8;
+}
+
+.inner-title li:nth-child(2) {
+    border-right: 1px dashed #e8e8e8;
+    border-bottom: 1px dashed #e8e8e8;
+}
+
+.inner-title li:nth-child(5) {
+    border-right: 1px dashed #e8e8e8;
+}
+
+.inner-title li:nth-child(7) {
+    border-left: 1px dashed #e8e8e8;
+    border-top: 1px dashed #e8e8e8;
+}
+
+.inner-title h2 {
+    font-size: 16px;
+    color: #358ff0;
+}
+
+.inner-title a {
+    display: block;
+    float: left;
+    margin: 10px;
+    font-size: 14px;
+}
+
+/*logo和搜索栏*/
+.top-main {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.top-main .search {
+    margin-top: 10px;
+}
+
+.top-main .search-input {
+    width: 575px;
+    border: 1px solid #358ff0;
+    background-color: #358ff0;
+    height: 42px;
+}
+
+.top-main .search-input > a:nth-child(1) {
+    display: block;
+    width: 75px;
+    height: 40px;
+    background-color: #fff;
+    text-align: center;
+    line-height: 40px;
+}
+
+.top-main .search-input > input {
+    display: block;
+    width: 380px;
+    height: 40px;
+    /*去掉input的边框和点击蓝框*/
+    border: none;
+    outline: none;
+}
+
+.top-main .search-input > a:nth-child(3) {
+    width: 114px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    color: #fff;
+}
+
+/*搜索栏下行小字*/
+.top-main .top-tips {
+    margin-top: 5px;
+}
+
+.top-main .top-tips span {
+    display: block;
+    float: left;
+    margin-right: 20px;
+}
+
+.top-main .top-tips a {
+    display: block;
+    float: left;
+    margin-right: 40px;
+}
+
+/*banner导航栏*/
+.banner {
+    background-color: #358ff0;
+}
+
+.banner ul {
+    height: 50px;
+}
+
+.banner li {
+    float: left;
+    width: 133px;
+}
+
+.banner li > a {
+    display: block;
+    color: #fff;
+    font-size: 18px;
+    text-align: center;
+    line-height: 50px;
+}
+
+.banner li > a:hover {
+    background-color: #2b71c2;
+}
+
+/*banner下面的小字*/
+.banner-tips {
+    height: 53px;
+    border-bottom: 1px solid #f1f1f1;
+}
+
+.banner-tips a {
+    display: block;
+    height: 53px;
+    float: left;
+    margin-left: 50px;
+    font-size: 14px;
+    text-align: center;
+    line-height: 53px;
+}
+
+/*主界面图片和内容展示*/
+.content-main {
+    padding-top: 20px;
+}
+
+.content-main-list {
+    width: 931px;
+    height: 446px;
+}
+
+.content-img {
+    height: 400px;
+}
+
+.content-img > img {
+    display: block;
+    width: 424px;
+    height: 318px;
+}
+
+.content-img > ul {
+
+}
+
+.content-img > ul > li {
+    float: left;
+    padding: 3px;
+    background-color: #ededed;
+}
+
+.content-img > ul img {
+    width: 100px;
+    height: 76px;
+    vertical-align: bottom;
+}
+
+/*中间内容*/
+.content-list {
+    width: 480px;
+    height: 400px;
+    padding-left: 30px;
+    overflow: hidden;
+}
+
+.content-list .list-title {
+    height: 50px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #358ff0;
+}
+
+.content-list .list-title > span {
+    line-height: 40px;
+    font-weight: bold;
+    color: #358ff0;
+}
+
+.content-list .list-title > a {
+    line-height: 40px;
+}
+
+/*中间列表内容*/
+.list-list {
+    padding-top: 20px;
+}
+
+.list-list li {
+    height: 30px;
+    padding-top: 10px;
+}
+
+.list-list ul a {
+    float: left;
+    display: block;
+    width: 380px;
+    height: 30px;
+    font-size: 14px;
+    /*实现多余字变。。。*/
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    width: 380px;
+}
+
+/*右边竖条*/
+.content-main-bian {
+    width: 250px;
+    height: 700px;
+    position: relative;
+}
+
+.content-main-bian .bian-title {
+    height: 50px;
+    border-bottom: 2px solid #358ff0;
+}
+
+.content-main-bian .bian-title a {
+    font-size: 18px;
+    line-height: 50px;
+    font-weight: bold;
+    color: #000;
+}
+
+.content-main-bian > ul {
+    width: 250px;
+    height: 660px;
+}
+
+.content-main-bian > ul > li {
+    width: 250px;
+    height: 110px;
+    border-bottom: 1px dashed #e4e4e4;
+}
+
+.content-main-bian > ul > li > a {
+    display: block;
+    height: 110px;
+    padding-top: 10px;
+}
+
+.content-main-bian > ul > li > a > img {
+    display: block;
+    margin-right: 25px;
+}
+
+.content-main-bian > ul > li > a > p {
+    margin-top: 10px;
+}
+
+.content-main-bian a.win7-a {
+    color: #358ff0;
+}
+
+.content-main-bian .winxp {
+    display: none;
+}
+
+/*未实现 一闪*/
+.content-main-bian .ad_2 {
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom: 10px;
+}
+
+/*下面新闻*/
+.content-main-message {
+    width: 935px;
+    height: 258px;
+    border-top: 1px dashed #ccc;
+    padding-top: 20px;
+}
+
+.content-main-message .message-content {
+    width: 500px;
+    height: 100px;
+    border-bottom: 1px dashed #ccc;
+}
+
+.content-main-message .message-content > p:nth-child(1) {
+    margin-top: 10px;
+    text-indent: 40px;
+}
+
+.content-main-message .message-content > p:nth-child(2) {
+    margin-top: 20px;
+    text-indent: 20px;
+}
+
+/*未 加上那个点*/
+.content-main-message ul {
+    margin-left: 10px;
+}
+
+.content-main-message ul li {
+    margin-top: 10px;
+}
+/*系统分类块*/
+.os-catagary{
+    height: 535px;
+
+}
+.os-catagary-title{
+    height: 80px;
+    padding-top: 25px;
+    border-bottom: 2px solid #358ff0;
+}
+.os-catagary-title>span:nth-child(1){
+    margin-right: 135px;
+    line-height: 55px;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.os-catagary-title li{
+     height: 100%;
+     float: left;
+     width: 90px;
+     margin-right: 42px;
+ }
+.os-catagary-title li a{
+    font-size: 18px;
+    line-height: 55px;
+}
+/*左边展示*/
+.os-catagary-left{
+    width: 930px;
+    height: 455px;
+    position: relative;
+}
+.os-catagary-left ul{
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: none;
+}
+.os-catagary-left ul:nth-child(1){
+    display: block;
+}
+.os-catagary-left ul li{
+    float: left;
+    width: 462px;
+    height: 155px;
+    margin-top: 20px;
+}
+.os-catagary-left img{
+    display: block;
+    width: 167px;
+    height: 128px;
+}
+.os-catagary-left a{
+    font-size: 18px;
+    width: 290px;
+    display: block;
+}
+.os-catagary-left p{
+    font-size: 18px;
+    margin-top: 20px;
+}
+.os-catagary-right{
+    width: 270px;
+    /*height: 455px;*/
+}
+.os-catagary-right ul li{
+    height: 45px;
+    margin-top: 10px;
+    overflow: hidden;
+}
+.os-catagary-right ul img{
+     display: block;
+     width: 67px;
+     height: 67px;
+    margin-right: 20px;
+ }
+.os-catagary-right h3{
+    font-size: 20px;
+    font-weight: bold;
+    height: 50px;
+    line-height: 50px;
+}
+.os-catagary-right ul h4{
+    font-size: 12px;
+    line-height: 45px;
+    font-weight: normal;
+}
+.os-catagary-right ul a{
+    display: block;
+    border: 1px solid #358ff0;
+    color: #358ff0;
+    width: 95px;
+    height: 28px;
+    line-height: 28px;
+    text-align: center;
+}
+.os-catagary-right ul a:hover{
+
+    color: #fff;
+    background-color: #358ff0;
+}
+.os-catagary-right ul li:hover{
+    height: 116px;
+     overflow: visible;
+ }
+.os-catagary-right ul li:hover h4{
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 45px;
+}
